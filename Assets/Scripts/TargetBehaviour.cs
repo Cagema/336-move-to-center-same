@@ -12,6 +12,8 @@ public class TargetBehaviour : MonoBehaviour
         int randIndex = Random.Range(0, _tags.Length);
         tag = _tags[randIndex];
         GetComponent<SpriteRenderer>().sprite = _sprites[randIndex];
+
+        transform.Rotate(0,0,Random.Range(0,360));
     }
     private void Update()
     {
